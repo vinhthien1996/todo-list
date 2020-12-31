@@ -1,0 +1,21 @@
+.containerTotal {
+  padding: 10px;
+}
+
+.totalItemTotal {
+  background: #f5365c;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.totalItemDone {
+  background: #68c15f;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+}

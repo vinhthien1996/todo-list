@@ -1,0 +1,33 @@
+.containerTodo {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 60px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -khtml-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+  .containerTodo {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .containerTodo {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+}
+
+@media only screen and (max-width: 480px) {
+}

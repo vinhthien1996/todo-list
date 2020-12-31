@@ -1,0 +1,33 @@
+.containerMessage {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -khtml-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  padding: 10px 20px 10px 10px;
+  top: -50px;
+  background-color: #f5365c;
+  color: #fff;
+  animation: inMess 0.5s 1;
+}
+
+@keyframes inMess {
+  from {
+    opacity: 0;
+    right: -50px;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+.closeMessage {
+  position: absolute;
+  top: 10px;
+  font-size: 14px;
+  right: 10px;
+}

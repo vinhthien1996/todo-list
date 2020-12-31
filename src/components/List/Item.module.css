@@ -1,0 +1,222 @@
+.containerItem {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  min-height: 50px;
+  border-bottom: 1px dashed #ddd;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  animation: inItem 1.5s 1;
+}
+
+@keyframes inItem {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.containerItem:hover {
+  background: #eee;
+  padding-left: 5px;
+}
+
+.containerItem:last-child {
+  border-bottom: transparent;
+}
+
+.iconTitle {
+  width: 40px;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  color: #68c15f;
+}
+.itemTitle {
+  width: calc(60% - 40px);
+  color: #555;
+  box-sizing: border-box;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titlePen {
+  color: #555555;
+}
+.titleDone {
+  color: #68c15f;
+  text-decoration: line-through;
+}
+.time {
+  font-size: 13px;
+  color: #555;
+}
+
+
+.itemMiddle {
+    width: 15%;
+}
+
+.itemTitle i,
+.itemTitleDone i {
+  color: #68c15f;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+.itemPriLow {
+  line-height: 50px;
+  font-size: 12px;
+  color: #ffbb34;
+}
+.itemPriMedium {
+  line-height: 50px;
+  font-size: 12px;
+  color: #5e72e4;
+}
+.itemPriHigh {
+  line-height: 50px;
+  font-size: 12px;
+  color: #f5365c;
+}
+
+.iconLow {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #ffbb34;
+}
+.iconMedium {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #5e72e4;
+}
+.iconHigh {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #f5365c;
+}
+
+.itemUD {
+  width: 25%;
+  text-align: right;
+  line-height: 50px;
+}
+
+.btnCheck {
+  border: transparent;
+  background: transparent;
+  font-size: 16px;
+  border-radius: 50%;
+  color: #68c15f;
+  outline: none;
+  cursor: pointer;
+}
+.btnEdit {
+  border: transparent;
+  background: transparent;
+  font-size: 16px;
+  border-radius: 50%;
+  color: #5e72e4;
+  outline: none;
+  cursor: pointer;
+}
+
+.btnDelete {
+  border: transparent;
+  background: transparent;
+  font-size: 16px;
+  border-radius: 50%;
+  color: #f5365c;
+  outline: none;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+/* CONFIRM */
+
+.sure {
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+.sureIcon {
+  font-size: 30px;
+  color: #f5365c;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.confirmSure {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nameJob {
+  text-align: center;
+  color: #363636;
+  padding: 15px 0;
+}
+.wrapBtnSure {
+  text-align: center;
+  margin-top: 2px;
+}
+.btnSureYes {
+  background: #f5365c;
+  border: transparent;
+  padding: 10px;
+  color: #fff;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.btnSureNo {
+  background: #ccc;
+  border: transparent;
+  padding: 10px;
+  color: #000;
+  border-radius: 3px;
+}
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 640px) {
+    .itemTitle {
+        width: calc(100% - 40px - 25px);
+    }
+    .itemMiddle {
+        width: 25px;
+        text-align: right;
+        padding-right: 12px;
+    }
+    .itemUD {
+        width: 100%;
+        padding-bottom: 5px;
+        line-height: 10px;
+        text-align: right;
+    }
+    .notMobile {
+        display: none;
+    }
+    .isMobile {
+        text-transform: capitalize;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .titlePen, .titleDone {
+    font-size: 14px;
+  }
+}
